@@ -1,4 +1,7 @@
 import './App.css';
+import Header from "./components/Header/Header";
+import Technologies from "./components/Technologies/Technologies";
+import Button from "./components/Button/Button";
 
 const App = () => {
     return (
@@ -6,30 +9,15 @@ const App = () => {
             <p>before header</p>
             <Header/>
             <p>after header</p>
-            <Technologies />
+            <Technologies/>
+
+            <div>
+                <Button kind="primary1" onClick={() => console.log("Кнопка нажата!")}>
+                    Привет, мир!
+                </Button>
+            </div>
         </div>
     );
 }
-
-const Technologies = () => {
-    return (
-        <ul>
-            <li>List item</li>
-            <li>html</li>
-            <li>css</li>
-            <li>js</li>
-        </ul>
-    );
-};
-
-const Header = () => {
-    return (
-        <div>
-            <a href="#">Home</a>
-            <a href="#">New Feed</a>
-            <a href="#">Messages</a>
-        </div>
-    );
-};
 
 export default App;
