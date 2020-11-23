@@ -1,0 +1,7 @@
+.item {
+    color: antiquewhite;
+}
+
+.item.active {
+    color: #ff25e4;
+}
